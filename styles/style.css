@@ -1,0 +1,138 @@
+/* RESET CSS */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: hsl(165, 50%, 90%);
+  --color-secondary: hsl(165, 50%, 10%);
+  --color-tertiary: hsl(225, 80%, 20%);
+  --color-accent: hsl(105, 80%, 20%);
+}
+.dark {
+  --color-primary: hsl(165, 50%, 10%);
+  --color-secondary: hsl(165, 50%, 90%);
+  --color-tertiary: hsl(225, 80%, 80%);
+  --color-accent: hsl(105, 80%, 80%);
+}
+
+/* font face */
+@font-face {
+  font-family: Poppins;
+  font-display: auto;
+  src: url(../fonts/Poppins.ttf);
+}
+
+html {
+  font-size: 1rem;
+}
+
+body {
+  background: var(--color-primary);
+  color: var(--color-secondary);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100dvh;
+}
+
+body,
+input,
+button {
+  font-family: Poppins, "sans-serif";
+}
+
+button {
+  cursor: pointer;
+}
+.wheatherImage {
+  width: 60%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+}
+.row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--color-tertiary);
+  color: var(--color-primary);
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.header{
+    background: var(--color-accent);
+    color: var(--color-primary);
+}
+.row__city{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 12px;
+    padding: 2rem;
+}
+.row__wheather{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 2rem;
+    margin-top: 40px;
+}
+.content__weather {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.weather__content {
+  background-color: aquamarine;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+.weather__content img {
+  width: 50px;
+  height: 50px;
+}
+.time-weather{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+img{
+    animation: spin 5s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  100%{
+    transform: rotate(10deg);
+  }
+}

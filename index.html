@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="gl">
+  <head>
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HanheldFriendly" content="true" />
+
+    <!-- Meta etiquetas PWA para Apple -->
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="apple-touch-startup-image" href="favicons/favicon_167x167@1x.png" />
+
+    <!-- Configuración General PWA -->
+    <link rel="manifest" href="manifest.json" />
+    
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="favicons/favicon_16x16@1x.png">
+    <link rel="apple-touch-icon" href="favicons/favicon_180x180@1x.png">
+    <link rel="apple-touch-icon" sizes="96x96" href="favicons/favicon_96x96@1x.png">
+    <link rel="apple-touch-icon" sizes="16x16" href="favicons/favicon_16x16@1x.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicons/favicon_152x152@1x.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="favicons/favicon_512x512@1x.png">
+
+    <!-- Meta etiquetas y restos -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wheather APP</title>
+    <link rel="shortcut icon" href="favicons/favicon_192x192@1x.png" type="image/png">
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="row__city">
+        <h1>Wheather APP</h1>
+        <h4 id="city">City</h4>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="row__wheather" id="wheather">
+        <!-- <div class="wheatherImage">
+            <h3></h3>
+            <img src="./assets/iconos/01d.png" alt="tiempo"/>
+          </div>
+          <div id="wheatherImageTommorow" class="col">
+            <h3>Mañana</h3>
+            <img src="./assets/iconos/01d.png" alt="tiempo" id="tommorow" />
+          </div>
+          <div id="wheatherImagePast" class="col">
+            <h3>Pasado Mañana</h3>
+            <img src="./assets/iconos/01d.png" alt="tiempo" id="past" />
+          </div>
+          <div id="wheatherImageFourthDay" class="col">
+            <h3 id="fourthDayText"></h3>
+            <img src="./assets/iconos/01d.png" alt="tiempo" id="fourthDay" />
+          </div> -->
+      </div>
+      <template id="weather-template"
+        ><div class="weather__content">
+          <h3 id="weather-hour"></h3>
+          <div class="weather__image">
+            <img
+              id="weather-image"
+              src="./assets/iconos/01d.png"
+              alt="tiempo"
+            />
+          </div>
+          <p id="weather-temp"></p>
+        </div>
+      </template>
+      <section class="time-weather">
+
+      </section>
+      <div class="row">
+        <div class="col">
+          <p>Abrente</p>
+          <p id="abrente">Presiona o dia</p>
+        </div>
+        <div class="col">
+          <p>Solpor</p>
+          <p id="solpor">Presiona o dia</p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>El tiempo de la ciudad</p>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
